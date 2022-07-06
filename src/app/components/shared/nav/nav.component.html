@@ -1,19 +1,19 @@
 
-<nav class="navbar navbar-expand-md navbar-light border-bottom">
+<nav class="navbar navbar-expand-md border-bottom">
     <div class="container">
-        <a routerLink="['/']" class="text-decoration-none navbar-brand">
+        <a routerLink="['/']" class="text-decoration-none navbar-brand text-dark">
             <app-header></app-header>   
         </a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao">
             <span class="navbar-toggler-icon"></span>     
         </button>
         <div class="collapse navbar-collapse" id="navegacao">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link">Produtos</a></li>
-                <li class="nav-item"><a class="nav-link">Suporte</a></li>
-                <li class="nav-item"><button class="btn btn-outline-primary">Sign up</button></li>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link link-dark">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link link-dark" [routerLinkActive]="'text-primary'" [routerLink]="'/produtos'" >Produtos</a></li>
+                <li class="nav-item"><a class="nav-link link-dark">Suporte</a></li>
             </ul>
+            <button class="btn btn-outline-primary">Sign up</button>
         </div>
     </div>
   </nav>
