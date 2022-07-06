@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-md border-bottom">
+<nav class="navbar navbar-expand-md navbar-light border-bottom">
     <div class="container">
         <a routerLink="['/']" class="text-decoration-none navbar-brand text-dark">
             <app-header></app-header>   
@@ -9,9 +9,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navegacao">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link link-dark">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link link-dark" [routerLinkActive]="'text-primary'" [routerLink]="'/produtos'" >Produtos</a></li>
-                <li class="nav-item"><a class="nav-link link-dark">Suporte</a></li>
+                <li class="nav-item"><a class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLinkActive]="'text-primary'" [routerLink]="'/produtos'" >Produtos</a></li>
+                <li class="nav-item"><a class="nav-link">Suporte</a></li>
             </ul>
             <button class="btn btn-outline-primary">Sign up</button>
         </div>
