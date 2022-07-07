@@ -1,0 +1,16 @@
+<div class="card">
+    <img class="card-img-top" src="../../../../../assets/imagens/livro-img.jpg" alt="{{livro.nome}}">
+    <p class="text-muted">Photo by <a class="text-decoration-none text-muted" href="https://unsplash.com/@boliveira?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bruno Oliveira</a> on <a class="text-decoration-none text-muted" href="https://unsplash.com/s/photos/livro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    <div class="card-body">
+        <h5 class="card-title text-center">{{livro.nome}}</h5>
+        <p> {{livro.categoria}}</p>
+        <p>Restando: {{livro.quantidade}}</p>
+        <p>{{livro.preco | currency:'BRL'}}</p>
+        <div class="card-footer">
+            <div class="d-flex justify-content-evenly">
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-outline-primary">Detalhes</button>
+            </div>
+        </div>
+    </div>
+</div>
