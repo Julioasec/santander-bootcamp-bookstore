@@ -11,6 +11,7 @@ import { SobreComponent } from './components/pages/sobre/sobre.component';
 import { SuporteComponent } from './components/pages/suporte/suporte.component';
 import { LivroComponent } from './components/pages/produtos/livro/livro.component';
 import { ProdutoListaComponent } from './components/pages/produtos/produto-lista/produto-lista.component';
+import { Error404Component } from './components/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProdutoListaComponent } from './components/pages/produtos/produto-lista
     SobreComponent,
     SuporteComponent,
     LivroComponent,
-    ProdutoListaComponent
+    ProdutoListaComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
