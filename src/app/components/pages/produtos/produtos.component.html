@@ -1,8 +1,8 @@
 <div class="container-fluid mt-4">
 
-    <!-- Área de filtro -->
     <div class="row gap-3 gap-lg-0">
-        <div class="col-12 d-flex justify-content-center col-lg-2  offset-lg-1">
+        <!-- Área de filtro -->
+        <div class="col-12 filtro d-flex justify-content-center col-lg-2 offset-lg-1">
             <div class="card">
                 <div class="card-header bg-light">
                     <p class="card-text text-center">
@@ -28,10 +28,10 @@
             </div>
         </div>
         <!-- Fim da Área de filtro -->
-        
-        <div class="col-9">
-             carequinha
+
+        <!-- Lista de produtos -->
+        <div class="col-12 col-lg-8">
+        <app-produto-lista [livros]="_listaDeLivros"></app-produto-lista>
         </div>
-        
     </div>
 </div>

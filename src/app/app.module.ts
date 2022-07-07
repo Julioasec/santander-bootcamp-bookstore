@@ -9,6 +9,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { ProdutosComponent } from './components/pages/produtos/produtos.component';
 import { SobreComponent } from './components/pages/sobre/sobre.component';
 import { SuporteComponent } from './components/pages/suporte/suporte.component';
+import { LivroComponent } from './components/pages/produtos/livro/livro.component';
+import { ProdutoListaComponent } from './components/pages/produtos/produto-lista/produto-lista.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SuporteComponent } from './components/pages/suporte/suporte.component';
     FooterComponent,
     ProdutosComponent,
     SobreComponent,
-    SuporteComponent
+    SuporteComponent,
+    LivroComponent,
+    ProdutoListaComponent
   ],
   imports: [
     BrowserModule,

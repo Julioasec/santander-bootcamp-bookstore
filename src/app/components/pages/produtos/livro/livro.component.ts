@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Categorias } from 'src/app/enums/categorias';
 import { Livro } from 'src/app/interfaces/livro';
 
@@ -9,19 +9,11 @@ import { Livro } from 'src/app/interfaces/livro';
 })
 export class LivroComponent implements OnInit {
 
-  livro!: Livro
+  @Input() livro!: Livro
 
   constructor() { }
 
   ngOnInit(): void {
-    this.livro = {
-      id: 0,
-      nome: "Cafunga",
-      preco: 22,
-      quantidade: 3,
-      categoria: Categorias.biografia,
-      img: "nenhuma"
-    }
   }
 
 }

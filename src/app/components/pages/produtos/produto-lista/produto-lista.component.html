@@ -1,0 +1,5 @@
+<div class="row">
+                <div *ngFor="let livro of livros; let index = index" [ngClass]="index % 2 === 0 ? 'offset-md-1' : 'offset-md-0'" class="col-10 offset-1 offset-sm-2 offset-md-0  offset-lg-0 col-sm-8 col-md-5 col-lg-4 mb-5">
+                    <app-livro [livro]="livro"></app-livro>
+                </div>
+            </div>
