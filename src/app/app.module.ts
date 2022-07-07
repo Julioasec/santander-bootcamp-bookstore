@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-import { ProdutosComponent } from './components/produtos/produtos.component';
+import { ProdutosComponent } from './components/pages/produtos/produtos.component';
+import { SobreComponent } from './components/pages/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
     HeaderComponent,
     NavComponent,
     FooterComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
