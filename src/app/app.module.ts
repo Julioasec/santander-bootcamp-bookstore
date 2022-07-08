@@ -12,6 +12,7 @@ import { SuporteComponent } from './components/pages/suporte/suporte.component';
 import { LivroComponent } from './components/pages/produtos/livro/livro.component';
 import { ProdutoListaComponent } from './components/pages/produtos/produto-lista/produto-lista.component';
 import { Error404Component } from './components/error404/error404.component';
+import { DetalhesComponent } from './components/pages/detalhes/detalhes.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Error404Component } from './components/error404/error404.component';
     SuporteComponent,
     LivroComponent,
     ProdutoListaComponent,
-    Error404Component
+    Error404Component,
+    DetalhesComponent
   ],
   imports: [
     BrowserModule,

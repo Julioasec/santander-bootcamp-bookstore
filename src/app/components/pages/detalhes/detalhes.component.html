@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12 col-lg-5">
+            <img src="../../../../assets/imagens/livro-img.jpg" alt="livro aberto">
+        </div>
+
+        <div class="col-12 col-lg-7 pt-3">
+            <h1 class="mb-5 ms-3 display-6"><span class="visually-hidden">Nome</span> {{livro.nome}}</h1>
+            <hr>
+
+            <div class="row">
+                <div class="col-12 pb-2">
+                    <p class="my-4">Categoria: {{livro.categoria}}</p>
+                    <p class="mb-4">Estoque: <b>{{livro.quantidade}}</b></p>
+                    <p class="display-6 mb-5"><span class="visually-hidden">Preço</span> {{livro.preco | currency: 'BRL'}}</p>
+                    <button class="btn-outline-success btn">Comprar</button>
+                    <hr class="bg-success">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
