@@ -10,19 +10,22 @@
                     </p>
                 </div>
                 <div class="card-body">
-                    <form class="row">
+                    <form class="row gap-3">
                         <div class="col-6 col-lg-12">
                             <label>
                                 De <span class="visually-hidden">Valor mínimo</span>
-                                <input placeholder="00,00" class="form-control" type="text">
+                                <input  name="valorMinimo" placeholder="00,00" type="text" class="form-control border-primary" >
                             </label>
                         </div>
                         <div class="col-6 col-lg-12">
                             <label>
                                 Até <span class="visually-hidden">Valor máximo</span>
-                                <input placeholder="00,00" type="text" class="form-control">
+                                <input  name="valorMaximo" placeholder="00,00" type="text" class="form-control border-primary">
                             </label>
                         </div>
+                            <div class="col-12 ">
+                                <button (click)="filtrar()" class="btn btn-outline-primary">Filtrar</button>
+                            </div>
                         </form>
                 </div>
             </div>
@@ -31,7 +34,7 @@
 
         <!-- Lista de produtos -->
         <div class="col-12 col-lg-8">
-        <app-produto-lista [livros]="_listaDeLivros"></app-produto-lista>
+        <app-produto-lista [events]="eventSubject.asObservable()" [filtros]="filtro" [livros]="_listaDeLivros"></app-produto-lista>
         </div>
     </div>
 </div>
