@@ -13,6 +13,7 @@ import { LivroComponent } from './components/pages/produtos/livro/livro.componen
 import { ProdutoListaComponent } from './components/pages/produtos/produto-lista/produto-lista.component';
 import { Error404Component } from './components/error404/error404.component';
 import { DetalhesComponent } from './components/pages/detalhes/detalhes.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DetalhesComponent } from './components/pages/detalhes/detalhes.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
